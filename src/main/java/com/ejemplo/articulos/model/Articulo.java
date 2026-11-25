@@ -1,6 +1,7 @@
 // Paquete que contiene la clase de modelo
 package com.ejemplo.articulos.model;
 
+import jakarta.persistence.Table;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -8,6 +9,7 @@ import jakarta.persistence.Id;
 
 // @Entity indica que esta clase se guarda en la base de datos (tabla "articulo")
 @Entity
+@Table(name = "articulos")
 public class Articulo {
 
     // @Id marca el campo que identifica cada fila

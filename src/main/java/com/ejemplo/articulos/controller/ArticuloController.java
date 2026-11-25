@@ -16,6 +16,7 @@ import java.util.List;
 // En este caso, todas las peticiones a este controlador comenzarán con /api/articulos
 // http://localhost:8080/api/articulos
 @RequestMapping("/api/articulos")
+@CrossOrigin(origins = "*")
 public class ArticuloController {
 
     // Inyección del servicio
